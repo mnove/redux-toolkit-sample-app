@@ -10,26 +10,6 @@ import { nanoid } from "@reduxjs/toolkit";
 import { Todo } from "./Todo";
 
 export const TodoList = () => {
-  //   // Redux Hooks
-  //   const dispatch = useDispatch();
-  //   // Local state hooks
-  //   const [text, setText] = useState("");
-
-  //   const submitTodo = () => {
-  //     if (text.length > 0) {
-  //       const items = text.split(",");
-  //       //   items.forEach((item) => {
-  //       //     dispatch(addTodo({ id: nanoid(), text: item, completed: false }));
-  //       //   });
-
-  //       dispatch(
-  //         addTodos(
-  //           items.map((item) => ({ id: nanoid(), text: item, completed: false }))
-  //         )
-  //       );
-  //     }
-  //   };
-
   const allTodos = useSelector(todoSelectors.selectEntities);
   const todoCount = useSelector(todoSelectors.selectTotal);
   const dispatch = useDispatch();

@@ -9,7 +9,6 @@ function App() {
         <h1>TODO App</h1>
         <h2>Redux Toolkit - createEntityAdapter</h2>
       </header>
-
       <AddTodo />
       <TodoList />
     </div>
